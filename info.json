@@ -1,9 +1,9 @@
 {
   "name": "research_causes_evolution",
-  "version": "16.2.1",
+  "version": "16.3.0",
   "title": "Research Causes Evolution",
-  "author": "Admo",
-  "contact": "adam@leibel.net",
+  "author": "H8UL",
+  "contact": "h8ul.mods@gmail.com",
   "factorio_version": "0.16",
   "dependencies": [ "base" ],
   "description": "Biter evolution factor is set by progress through the research tree."

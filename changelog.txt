@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Version: 16.3.0
+Date: 12. 12. 2018
+  Changes:
+    - "Under new management". Mod adopted by H8UL (credit to admo for original mod).
+  Bugfixes:
+    - Critical fixes to evolution calculation
