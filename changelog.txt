@@ -6,10 +6,10 @@ Date: 13. 12. 2018
   Features:
     - Technology effects on evolution shown in tech tree.
     - Startup setting to decide whether evolution effects are weighted to early tech, late tech, or equal. Early tech
-    gives evolution more similar to vanilla where evolution is faster at the beginning of the game and gradually tapers
-    off.
+      gives evolution more similar to vanilla where evolution is faster at the beginning of the game and gradually tapers
+      off.
     - Startup setting to control whether upgrade technologies effect evolution. The default has now changed to include
-    upgrades, giving a smoother evolution change through the tech tree.
+      upgrades, giving a smoother evolution change through the tech tree.
     - Evolution automatically recalculated when technologies or startup settings change.
     - Disabled technologies are excluded from the evolution calculations, improving compatibility with other mods.
 ---------------------------------------------------------------------------------------------------
