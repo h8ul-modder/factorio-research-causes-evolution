@@ -20,8 +20,19 @@
    SOFTWARE.
 --]]
 
+local includeUpgrades = settings.startup["research-causes-evolution-include-upgrades"].value
+
 local function cost(tech)
-    if tech.enabled or tech.max_level == "infinite" then
+
+    if tech.enabled == false then
+        return nil
+    end
+
+    if tech.max_level == "infinite" then
+        return nil
+    end
+
+    if includeUpgrades == false and tech.upgrade == true then
         return nil
     end
 

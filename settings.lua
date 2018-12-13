@@ -27,5 +27,11 @@ data:extend{
         setting_type = "startup",
         default_value = "early",
         allowed_values = {"early", "equal", "late"}
+    },
+    {
+        type = "bool-setting",
+        name = "research-causes-evolution-include-upgrades",
+        setting_type = "startup",
+        default_value = "true"
     }
 }

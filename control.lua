@@ -1,5 +1,5 @@
 --[[
-   Copyright 2018 admo/H8UL
+   Copyright 2018 H8UL
 
    Permission is hereby granted, free of charge, to any person obtaining a copy
    of this software and associated documentation files (the "Software"), to deal
@@ -20,33 +20,8 @@
    SOFTWARE.
 --]]
 
-local function onInit()
-    game.map_settings.enemy_evolution.enabled = false
-end
+require 'evolution-control'
 
-local function onReseearchFinished(event)
-    local eventForce = event.research.force
-    local evolution = 0
-
-    for _, tech in pairs(eventForce.technologies) do
-        if tech.researched and tech.effects then
-            for _,effect in pairs(tech.effects) do
-                if effect.type == "nothing" and effect.effect_description then
-
-                    if effect.effect_description[1] == "research-causes-evolution-effect" then
-                        local value = effect.effect_description[2]
-                        evolution = evolution + value
-                    end
-                end
-            end
-        end
-        for _,force in pairs(game.forces) do
-            if force.ai_controllable then
-                force.evolution_factor = evolution / 100.0
-            end
-        end
-    end
-end
-
-script.on_event({defines.events.on_research_finished}, onReseearchFinished)
-script.on_init(onInit)
+script.on_init(researchCausesEvolution_on_init)
+script.on_configuration_changed(researchCausesEvolution_recalcuate)
+script.on_event(defines.events.on_research_finished, researchCausesEvolution_on_research_finished)
