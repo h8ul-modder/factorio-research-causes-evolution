@@ -1,5 +1,11 @@
 ---------------------------------------------------------------------------------------------------
-Version: 16.4.0
+Version: 0.17.0
+Date: 16. 03. 2019
+  Changes:
+    - Upgraded to Factorio 0.17
+    - Version numbering scheme changed so that it will be appropriate for when Factorio goes 1.0
+---------------------------------------------------------------------------------------------------
+Version: 0.16.4
 Date: 13. 12. 2018
   Changes:
     - Complete rewrite. Removed runtime setting making all tech equal as there is a replacement startup setting.
@@ -13,7 +19,7 @@ Date: 13. 12. 2018
     - Evolution automatically recalculated when technologies or startup settings change.
     - Disabled technologies are excluded from the evolution calculations, improving compatibility with other mods.
 ---------------------------------------------------------------------------------------------------
-Version: 16.3.0
+Version: 0.16.3
 Date: 12. 12. 2018
   Changes:
     - "Under new management". Mod adopted by H8UL (credit to admo for original mod).

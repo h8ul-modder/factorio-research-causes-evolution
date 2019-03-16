@@ -8,8 +8,7 @@ their resources to research, and rush through the technology tree and barely exp
 they move on. Now, rushing technology isn't necessary to keep up with biters; in fact it is a bad idea if you haven't
 built up your defenses!
 
-**Note**: this mod was adopted by H8UL from version 16.3.0 and completely rewritten in 16.4.0. Credit to admo for the
-original mod.
+**Note**: this mod was adopted by H8UL and has since been completely rewritten. Credit to admo for the original mod.
 
 ## Features
 

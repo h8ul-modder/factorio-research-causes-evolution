@@ -28,6 +28,10 @@ local function cost(tech)
         return nil
     end
 
+    if tech.hidden == false then
+        return nil
+    end
+
     if tech.max_level == "infinite" then
         return nil
     end
@@ -38,7 +42,7 @@ local function cost(tech)
 
     local count = tech.unit.count
 
-    if count == nil or count < 1 then
+    if count == nil or type(count) ~= "number" or count < 1 then
         return nil
     end
 
