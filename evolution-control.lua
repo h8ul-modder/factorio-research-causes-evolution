@@ -41,7 +41,7 @@ local function recalculateResearchEvolution(eventForce)
             end
         end
         for _,force in pairs(game.forces) do
-            if force.ai_controllable then
+            if force.ai_controllable or force == game.forces.enemy then
                 force.evolution_factor = evolution / 100.0
             end
         end
